@@ -95,7 +95,6 @@ document.getElementById("Sender").addEventListener("click", function(e){
 
 
 
-var URL = `http://developers.gictsystems.com/api/dummy/items/`
 
 // call the function to get all results on the page.
 function testData(){
@@ -105,9 +104,9 @@ function testData(){
     url: 'http://127.0.0.1:5000/',
     type: 'GET',
     data :{},
-    // beforeSend: function (xhr) {
-    //     xhr.setRequestHeader('Authorization', 'Bearer ALDJAK23423JKSLAJAF23423J23SAD3');
-    // },
+    beforeSend: function (xhr) {
+        xhr.setRequestHeader('Authorization', 'Bearer XXXXXXXXXXXXXXXXXXXXXXXX');
+    },
     success: function (data) {
 
       console.log("Success")
