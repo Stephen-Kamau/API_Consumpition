@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg.png);
+    background-position: center;
+    background-size: cover;
+    padding-right: 3%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.header {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 80px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+nav {
+    flex: 1;
+    padding-left: 450px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav ul li a:active {
+    color: red;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    box-shadow: 3px 8px 22px rgba(94,28,68,.15);
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+.content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .text {
+    position: relative;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+.content .text h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    font-size: 40px;
+    color: #fff;
+}
+.content .text h1 span {
+    font-size: 50px;
+}
+.content .text p {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin-top: 40px;
+    color: #e7e3e3;
+ }
+
+ label{
+   font-weight: bold;
+ }
+
+
+
+.btn1 {
+    margin-top: 10px;
+    color: red;
+    width: 200px;
+    margin-left: 120px;
+    padding: 15px 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+
+
+
+/* Style the tab content */
+.tabcontent {
+  padding: 0px 12px;
+  width: 70%;
+  margin-left: 14%;
+  margin-top: 4%;
+  border: none;
+}
+
+
+/* table style */
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 700px;
+    align-items: center;
+    margin: 0 auto;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+}
+tr {
+    border-bottom: 1px solid #dddddd;
+    width: 90%;
+}
+
+
+th,td {
+    padding: 12px 15px;
+    width: 29%;
+}
+
+tr {
+    color: #ffffff;
+    text-align: left;
+}
