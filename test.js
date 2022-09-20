@@ -65,21 +65,25 @@ document.getElementById("Sender").addEventListener("click", function(e){
 
     if (inputValidation()) {
       let information = {
-        "full name":document.getElementById("fname").value,
+        "fullnames":document.getElementById("fname").value,
         "email":document.getElementById("email").value,
         "phone":document.getElementById("phone").value,
         "address":document.getElementById("address").value,
       }
-      console.log(information)
+      console.log(JSON.stringify(information))
 
-      $.ajax('http://127.0.0.1:5000/res', {
+      $.ajax('http://developers.gictsystems.com/api/dummy/submit/', {
           type: 'POST',
-          data: information,
+          data: JSON.stringify(information),
+          dataType: "json",
+          contentType: "application/json",
           success: function (data, status, xhr) {
+            console.log("Request Submitted")
               alert('status: ' + status + ', data: ' + data)
           },
           error: function (jqXhr, textStatus, errorMessage) {
-            console.log(JSON.parse(jqXhr))
+            console.log("Have not sent the request")
+            // console.log(JSON.parse(jqXhr))
               alert('Error' + errorMessage + jqXhr)
           }
       });
@@ -101,11 +105,11 @@ function testData(){
 
   console.log("Started Here")
   $.ajax({
-    url: 'http://127.0.0.1:5000/',
+    url: 'http://developers.gictsystems.com/api/dummy/items/',
     type: 'GET',
     data :{},
     beforeSend: function (xhr) {
-        xhr.setRequestHeader('Authorization', 'Bearer XXXXXXXXXXXXXXXXXXXXXXXX');
+        xhr.setRequestHeader('Authorization', 'Bearer ALDJAK23423JKSLAJAF23423J23SAD3');
     },
     success: function (data) {
 
